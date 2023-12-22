@@ -129,7 +129,17 @@
   cursor: pointer;
   outline: inherit;
   color:#0C513F;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+
 }
+
+.btn-nkd:hover {
+  color: #0C513F; /* Change text color on hover */
+  cursor: pointer; /* Change cursor to indicate clickable */
+  text-decoration: underline; /* Add underline to indicate it's a link */
+  transform: scale(1.02); /* Slightly scale up on hover */
+}
+
 
 .nkd-icon {
   /* Style your icon here. For example: */
@@ -193,7 +203,6 @@ line-height: normal;
 
   .navbar .navbar-nav {
     margin-top: 15px;
-    border-top: 1px solid #eeeeee;
   }
 }
 
@@ -205,6 +214,9 @@ line-height: normal;
   .navbar {
     height: 68px;
   }
+
+
+
 
   .navbar .nav-item .dropdown-menu {
     display: block;
@@ -232,7 +244,95 @@ line-height: normal;
   }
 }
 
+/***custm testimonials ***/
+.testimonial-section {
+  padding: 50px;
+  text-align: center;
+  border-radius: 40px;
 
+}
+
+.testimonial-header {
+  margin-bottom: 15px; 
+  color: #333;
+}
+
+
+#testimonialCarousel {
+  margin-top: 15px; 
+}
+
+.testimonial-card {
+  padding: 20px;
+  margin: 0 auto; /* Centering the card */
+  max-width: 800px; /* Adjust max-width as needed */
+  min-width: 300px;
+}
+
+
+.testimonial-text {
+  font-size: 1rem !important;
+  color: #555;
+}
+
+.testimonial-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.author-details {
+  text-align: center;
+}
+
+.author-name {
+  margin: 0;
+  color: #333;
+}
+
+.author-title {
+  margin: 0;
+  font-size: 0.85em;
+  color: #666;
+}
+
+.testimonial-control-prev-icon,
+.testimonial-control-next-icon,
+.testimonial-control-prev span,
+.testimonial-control-next span {
+    background-image: none; /* Remove default arrows */
+    color: #0C513F; /* Apply your color */
+    font-size: 20px; /* Adjust size as needed */
+}
+
+
+.testimonial-control-prev,
+.testimonial-control-next {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    z-index: 100; /* Ensure they are above other content */
+}
+
+.testimonial-control-prev {
+    left: 10px; /* Adjust as needed */
+}
+
+.testimonial-control-next {
+    right: 10px; /* Adjust as needed */
+}
+
+
+/*** end ***/
 
 
 
@@ -277,9 +377,13 @@ line-height: normal;
   /*background: linear-gradient(rgba(3, 27, 78, 0.3), rgba(3, 27, 78, 0.3)),
     url(../img/testimonial.jpg) center center no-repeat;
     background-size: cover; */
-  background-color: #0C513F;
-  border-radius: 40px;
-  width: 1390px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  position: relative;
+  z-index: 10; 
+  border-radius: 20px;
+  
   
 }
 
@@ -603,39 +707,6 @@ line-height: 140%; /* 19.6px */
   opacity: 1;
 }
 
-/*** Testimonial ***/
-.testimonial {
-  background: linear-gradient(rgba(3, 27, 78, 0.3), rgba(3, 27, 78, 0.3)),
-    url(../img/testimonial.jpg) left center no-repeat;
-  background-size: cover;
-}
-
-.testimonial-item img {
-  width: 60px !important;
-  height: 60px !important;
-  border-radius: 60px;
-}
-
-.testimonial-carousel .owl-nav {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-}
-
-.testimonial-carousel .owl-nav .owl-prev,
-.testimonial-carousel .owl-nav .owl-next {
-  margin-left: 15px;
-  color: var(--bs-primary);
-  font-size: 30px;
-  line-height: 0;
-  transition: 0.5s;
-}
-
-.testimonial-carousel .owl-nav .owl-prev:hover,
-.testimonial-carousel .owl-nav .owl-next:hover {
-  color: var(--bs-dark);
-}
 
 /*** Contact ***/
 @media (min-width: 992px) {
