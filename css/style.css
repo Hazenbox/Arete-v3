@@ -5,6 +5,7 @@
   right: 30px;
   bottom: 30px;
   z-index: 99;
+  opacity: 0% !important;
 }
 
 .fw-medium {
@@ -140,6 +141,21 @@
   transform: scale(1.02); /* Slightly scale up on hover */
 }
 
+.carousel-item-bg {
+  background: url('img/carousel-4.jpg') no-repeat center center;
+  background-size: cover; /* This ensures the image covers the entire div */
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+  .carousel-item-bg {
+      background-position: center; /* Adjust this value to focus on a specific part of the image */
+      background-size: 150%; /* Adjust the background size as needed */
+  }
+  .mobile-top-padding {
+      padding-top: 20px; /* Top padding for mobile screens */
+  }
+}
 
 .nkd-icon {
   /* Style your icon here. For example: */
@@ -150,7 +166,6 @@
 /* footer links*/
 .footer-link { 
 color: rgba(72, 67, 67, 0.75) !important;
-text-align: right;
 font-family: Inter;
 font-size: 13px;
 font-style: normal;
@@ -182,9 +197,14 @@ line-height: normal;
 .navbar .navbar-nav c
 .navbar .navbar-nav .nav-link.active {
   
-  color: #0C513F !important;
+  color: #0C513F;
   font-weight: 500 !important;
 }
+
+.nav-link.active {
+  color: #0C513F !important; /* Or any green shade you prefer */
+}
+
 
 .navbar .dropdown-toggle::after {
   border: none;
