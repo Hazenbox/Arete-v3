@@ -604,6 +604,15 @@ progress {
   max-width: 100%;
   height: auto;
 }
+
+.video-fluid {
+  height:638px;
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -2712,6 +2721,39 @@ fieldset:disabled .btn {
   background-color: #30B01D;
   border-color: #30B01D;
 }
+
+.btn-floating-bottom {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .btn-floating-bottom {
+    color: #fff;
+    background-color: #0c513f;
+    border-color: #0c513f;
+    border-radius: 30px;
+    height: 50px;
+    position: fixed; /* Keeps the button in place while scrolling */
+    left: 50%; /* Horizontally centers the button */
+    bottom: 10px; /* Distance from the bottom of the screen */
+    transform: translateX(-50%); /* Adjusts for exact center alignment */
+    z-index: 999; /* Ensures the button stays above other content */
+    width: 80%; /* Adjusts the width of the button */
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    text-align: center; /* Aligns text inside the button */
+}
+.btn-floating-bottom:hover {
+    color: #fff;
+    background-color: #30B01D;
+    border-color: #30B01D;
+}
+
+}
+
+
+
 .btn-check:focus + .btn-primary,
 .btn-primary:focus {
   color: #fff;
@@ -3865,33 +3907,60 @@ fieldset:disabled .btn {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  z-index: 9999;
+  width: 360px !important;
 }
+
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid rgba(0, 0, 0, 0);
-  border-radius: 0px;
   transition: box-shadow 0.15s ease-in-out;
+  margin-left: auto; /* Pushes it to the right */
+
 }
 @media (prefers-reduced-motion: reduce) {
   .navbar-toggler {
     transition: none;
   }
 }
+
+@media (max-width: 768px) {
+  .navbar {
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top:6px ;
+      position: fixed;
+      align-items: center; 
+      display: flex;
+      justify-content: space-between; 
+      width: 100%;
+      z-index: 1000; /* Ensures navbar stays on top of other content */
+
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    
+  }
+}
+
+
 .navbar-toggler:hover {
   text-decoration: none;
 }
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem;
+  box-shadow: 0 0 0 0.05rem;
 }
 .navbar-toggler-icon {
   display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
+  width: 1.25em;
+  height: 1.25em;
   vertical-align: middle;
   background-repeat: no-repeat;
   background-position: center;
@@ -3901,7 +3970,7 @@ fieldset:disabled .btn {
   max-height: var(--bs-scroll-height, 75vh);
   overflow-y: auto;
 }
-@media (min-width: 576px) {
+@media (min-width: 320px) {
   .navbar-expand-sm {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -3913,8 +3982,8 @@ fieldset:disabled .btn {
     position: absolute;
   }
   .navbar-expand-sm .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
   }
   .navbar-expand-sm .navbar-nav-scroll {
     overflow: visible;
@@ -4075,6 +4144,7 @@ fieldset:disabled .btn {
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
   color: rgba(0, 0, 0, 0.9);
+  
 }
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
@@ -4411,6 +4481,13 @@ fieldset:disabled .btn {
 .accordion-flush .accordion-item .accordion-button {
   border-radius: 0;
 }
+
+@media (max-width: 767px) {
+  .accordion-container {
+      min-width: 90%; /* Adjust the width as needed */
+  }
+}
+
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
@@ -5604,6 +5681,13 @@ fieldset:disabled .btn {
   top:24px;
   border-radius: 24px !important;
 }
+
+@media (max-width: 768px) {
+  .header-carousel .btn {
+      display: none; /* Hides the button on small screens */
+  }
+}
+
 .carousel.poInter-event {
   touch-action: pan-y;
 }
@@ -7034,10 +7118,30 @@ fieldset:disabled .btn {
 .bg-primary {
   background-color: #f4f1eb !important;
 }
-.bg-nav {
+.bg-sec{
   background-color: #eee9df !important;
   border-radius: 50px;
 }
+
+.bg-nav{
+  background-color: #eee9df !important;
+  border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  .bg-nav {
+      background-color: #eee9df !important;
+      border-radius: 30px;
+      width: 90%; /* Adjusted width to 90% of the viewport width */
+      position:fixed; /* Positioning relative to the viewport */
+      left: 50%; /* Centering horizontally */
+      justify-content: center;
+      transform: translateX(-50%); /* Adjust for exact center alignment */
+  }
+}
+
+
+
 .bg-secondary {
   background-color: #0c513f !important;
 }
