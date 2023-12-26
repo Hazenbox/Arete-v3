@@ -101,19 +101,19 @@ h1,
  /* Small screens */
  @media (max-width: 768px) {
   .header-carousel .display-1 {
-      font-size: 2.5rem; /* Smaller font size for small screens */
-      padding: 4rem 1rem 0 2rem;
+      font-size: 1.75rem; /* Smaller font size for small screens */
+      padding: 3rem 1rem 0 1rem;
   }
   .header-carousel h6 {
       font-size: 1rem; /* Smaller font size for small screens */
-      padding: 0 0 0 2rem;
+      padding: 0 0 0 1rem;
   }
   .header-carousel .btn {
       font-size: 0.8rem; /* Smaller button font size for small screens */
-      padding: 0 0 0 2rem;
+      padding: 0 0 0 1rem;
   }
   .mobile-top-padding {
-    padding-top: 30px; /* Adjust this value as needed */
+    padding-top: 60px; /* Adjust this value as needed */
   }
 }
 
@@ -127,9 +127,10 @@ h1,
   .carousel-item-bg {
       background-position: center; /* Adjust this value to focus on a specific part of the image */
       background-size: 150%; /* Adjust the background size as needed */
+      height: 400px;
   }
   .mobile-top-padding {
-      padding-top: 20px; /* Top padding for mobile screens */
+      padding-top: 40px; /* Top padding for mobile screens */
   }
 }
 
@@ -611,6 +612,16 @@ progress {
   min-width: 100%;
   min-height: 100%;
   width: auto;
+}
+@media (max-width: 768px) {
+
+.video-fluid {
+  height: 440px;;
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+}
 }
 
 .img-thumbnail {
@@ -2738,7 +2749,7 @@ fieldset:disabled .btn {
     bottom: 10px; /* Distance from the bottom of the screen */
     transform: translateX(-50%); /* Adjusts for exact center alignment */
     z-index: 999; /* Ensures the button stays above other content */
-    width: 80%; /* Adjusts the width of the button */
+    width: 93%; /* Adjusts the width of the button */
     display: flex; /* Enables flexbox */
     justify-content: center; /* Centers content horizontally */
     align-items: center; /* Centers content vertically */
@@ -4000,6 +4011,9 @@ fieldset:disabled .btn {
   .navbar-expand-md {
     flex-wrap: nowrap;
     justify-content: flex-start;
+    padding-left: 20px; 
+    padding-right: 20px;
+    
   }
   .navbar-expand-md .navbar-nav {
     flex-direction: row;

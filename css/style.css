@@ -162,6 +162,19 @@
   font-size: 14px;
   color: #0C513F ;
 }
+/*modal*/
+.custom-modal-dialog {
+  max-width: 90%; /* Responsive width */
+}
+
+.custom-modal-content {
+  border-radius: 15px; /* Rounded corners */
+}
+
+.custom-modal-button {
+  border-radius: 100px; /* Rounded corners for the button */
+}
+
 
 /* footer links*/
 .footer-link { 
@@ -205,6 +218,55 @@ line-height: normal;
   color: #0C513F !important; /* Or any green shade you prefer */
 }
 
+@media (max-width: 408px) {
+  .navbar-nav .nav-link {
+      font-size: 12px; /* Smaller font size */
+      padding: 5px 10px; /* Reduced padding */
+  }
+
+  .navbar-brand img {
+      max-width: 200px; /* Smaller logo width */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  .navbar-toggler {
+      padding: 5px; /* Smaller toggler padding */
+  }
+
+  /* Other styles as needed */
+}
+
+@media (min-width: 409px) and (max-width: 767px) {
+  .navbar-nav .nav-link {
+      font-size: 12px; /* Smaller font size */
+      padding: 5px 10px; /* Reduced padding */
+  }
+
+  .navbar-brand img {
+      max-width: 220px; /* Smaller logo width */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  .navbar-toggler {
+      padding: 5px; /* Smaller toggler padding */
+  }
+
+  /* Other styles as needed */
+}
+
+
+@media (min-width: 768px) {
+  .navbar-nav .nav-link {
+      font-size: 12px; /* Smaller font size */
+      padding: 5px 10px; /* Reduced padding */
+  }
+  .navbar-toggler {
+      padding: 5px; /* Smaller toggler padding */
+  }
+
+  /* Other styles as needed */
+}
+
 
 .navbar .dropdown-toggle::after {
   border: none;
@@ -218,7 +280,7 @@ line-height: normal;
 @media (max-width: 991.98px) {
   .navbar .navbar-nav .nav-link {
     margin-right: 0;
-    padding: 10px 0;
+    padding: 24px;
   }
 
   .navbar .navbar-nav {
@@ -236,6 +298,15 @@ line-height: normal;
   }
 
 
+ 
+
+@media (min-width: 1024px) and (max-width: 1285px) {
+  .navbar {
+      width: 90%; /* Adjust this value as needed */
+      margin: 0 auto; /* This centers the navbar if it's not full width */
+  }
+  /* Additional styles if needed */
+}
 
 
   .navbar .nav-item .dropdown-menu {
@@ -273,13 +344,11 @@ line-height: normal;
 }
 
 .testimonial-header {
-  margin-bottom: 15px; 
-  color: #333;
+  color: #0C513F !important;
 }
 
 
 #testimonialCarousel {
-  margin-top: 15px; 
 }
 
 .testimonial-card {
@@ -351,6 +420,35 @@ line-height: normal;
     right: 10px; /* Adjust as needed */
 }
 
+
+
+
+/* Custom CSS for Carousel Arrows on Small Screens */
+@media (max-width: 767px) {
+  .testimonial-control-prev, .testimonial-control-next {
+      position: absolute;
+      top: 50%; /* Align vertically */
+      transform: translateY(-50%);
+  }
+
+  .testimonial-control-prev {
+      left: -30px; /* Align to the left edge */
+  }
+
+  .testimonial-control-next {
+      right: -30px; /* Align to the right edge */
+  }
+  
+.testimonial-text {
+  font-size: 14px !important;
+  color: #555;
+}
+.testimonial-card {
+  padding: 20px;
+  margin: 0 auto; /* Centering the card */
+  min-width: 200px;
+}
+}
 
 /*** end ***/
 
