@@ -33,7 +33,8 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body>  
+    
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -41,36 +42,53 @@
     </div>
     <!-- Spinner End -->
 
-
-    <div class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex">
-        
     </div>
     <!-- Brand End -->
     
+    <div class="container-fluid bg-primary pt-4 pb-4 d-none d-lg-flex">
+        <div class="container pb-2">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex  mt-3">
+                    <i class="bi bi-telephone-inbound fs-2"></i>
+                    <div class="ms-3">
+                        <h6 class="text-dark mb-0">Call Now</h6>
+                        <span>+18179347065</span>
+                    </div>
+                </div>
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo-nav.png" alt="" width="100%" height="56px">
+                </a>                
+                <div class="d-flex  mt-3">
+                    <i class="bi bi-envelope fs-2"></i>
+                    <div class="ms-3">
+                        <h6 class="text-dark mb-0">Mail Now</h6>
+                        <span>info@arete.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Navbar Start -->
     <div class="container-fluid sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-nav py-lg-0 px-lg-3" style="text-align: left;">
-                <a href="index.html" class="navbar-brand">
-                    <img src="img/logo-nav.png" alt="" width="100%" height="56px">
-                </a>
+                <a href="index.html" class="navbar-brand"><img src="img/logo-nav.png" alt="" width="100%" height="56px" id="logo-image"></a>   
                 <div type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                  </div>
+                
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About Me</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="service.html" class="nav-item nav-link active">Services</a>
                         <a href="patient.html" class="nav-item nav-link">Patient forms</a>
                         <a href="faqs.html" class="nav-item nav-link">FAQs</a>
                         <a href="#" class="nav-item nav-link">Fax:817-612-3600</a>
                     </div>
                     <div class="ms-auto d-none d-lg-flex">
-                           
-                        <a class="btn btn-sm-square btn-secondary ms-2" href="tel:817.934.7065">
-                            <i class="fas fa-phone-alt"></i>
-                        </a>                                               
+                        <a class="btn btn-sm-square btn-secondary ms-2" href="tel:817.934.7065"><i class="fas fa-phone-alt"></i></a>                                               
                         <a href="https://intakeq.com/new/4sfupn" class="btn btn-primary py-3 px-5" style="margin-left:12px">Book consultation</a>
                     </div>
                 </div>
@@ -79,13 +97,12 @@
     </div>
     <!-- Navbar End -->
 
-
     <!-- Page Header Start -->
     <div class="container-fluid page-header2 py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5 mt-2">
             <div class="text-white me-auto wow fadeInUp justify-content" style="justify-content: center;" data-wow-delay="0.1s">
-                <h3 class="mb-3" style="color:#F4F1EB;">Mental Health & Wellness Services</h3>
-                <div style="display: flex; justify-content: center;"><p class="mb-5" style="width: 70%;">I emphasize the importance of diet, sleep hygiene, and a healthy lifestyle, as I firmly believe in the power of each individual to create positive change in their lives.</p></div>
+                <h3 class="mb-3" style="color:#F4F1EB;">" When you do things from your soul, you feel a river moving in you, its JOY. "- RUMI</h3>
+                <div style="display: flex; justify-content: center;"><p class="mb-5" style="width: 70%;">"Three months from now, you will be in a better situation, claim it"</p></div>
             </div>
         </div>
     </div>
@@ -98,93 +115,341 @@
     <div class="container-fluid container-service py-2" style="top: -150px;">
         <div class="container py-5 ">
             <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" onClick= "" data-wow-delay="0.1s" data-bs-toggle="modal" data-bs-target="#anxietyModal">
                     <div class="service-item">
+                        <a href="#">
                         <img class="img-fluid w-100 mb-2" src="img/services/Property 1=anxiety.png" alt="">
-                        <p class="mb-2 px-2 service-text">Anxiety</p>
+                        <p class="mb-2 px-2 service-text">Anxiety</p> </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <!-- Anxiety Modal -->
+                <div class="modal fade" id="anxietyModal" tabindex="-1" aria-labelledby="anxietyModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+                        <div class="modal-content custom-modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="derpressionModalLabel">Anxiety</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Ready to unburden your shoulders from anxiety? Regardless of the recovery phase you are in,  I will work with you- I will treat you as YOU deserve to be treated. </p>
+                                <p><b>Here are some of the areas I will work with you on: Productivity challenges Procrastination, Physical Discomfort, Difficulty Making Decisions, Interpersonal Challenges, Missed Opportunities, Increased Absenteeism, Heightened Stress Levels, Difficulty Managing Workload, Impaired Decision-Making.</b></p> 
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" onClick= "" data-wow-delay="0.1s" data-bs-toggle="modal" data-bs-target="#depressionModal">
                     <div class="service-item">
+                            <a href="#">
                             <img class="img-fluid w-100 mb-2" src="img/services/Property 1=Depression.png" alt="">
-                            <h6 class="mb-2 px-2 service-text">Depression</h6>
+                            <h6 class="mb-2 px-2 service-text">Depression</h6> </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <!-- Depression Modal -->
+                <div class="modal fade" id="depressionModal" tabindex="-1" aria-labelledby="depressionModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+                        <div class="modal-content custom-modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="derpressionModalLabel">Depression</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Are you someone with failed med trials, have non- traditional relationships, and feel like you’re giving too much in a relationship? Explore healthier dynamics and empower yourself in our counseling sessions."</p>
+                                <p>It's essential to remember that everyone's experience with depression is unique, and these generalizations may not capture the full spectrum of individual experiences.</p>
+                                <p><b>Persistent sadness, fatigue and lack of energy, sleep disturbances, poor focus, Loss of interest,  feeling worthless, guilt, changes in appetite, physical Symptoms, isolation, suicidal thoughts.I will probe into every single detail during our sessions to help you get better as quickly and efficiently as possible.</b></p> 
+                                <p>Interested in a non- pharmaceutical, non- invasive treatment  that can help improve your depression? As us how.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" onClick= "" data-wow-delay="0.1s" data-bs-toggle="modal" data-bs-target="#nutritionModal">
                     <div class="service-item">
+                        <a href="#">
                         <img class="img-fluid w-100 mb-2" src="img/services/Property 1=supplements.png" alt="">
-                        <h6 class="mb-2 px-2 service-text">Balanced Nutrition & Supplements</h6>
+                        <h6 class="mb-2 px-2 service-text">Balanced Nutrition & Supplements</h6></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <!-- Nutrition Modal -->
+                <div class="modal fade" id="nutritionModal" tabindex="-1" aria-labelledby="nutritionModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+                        <div class="modal-content custom-modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="nutritionModalLabel">Balanced Nutrition & Supplements</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Supplements, plant-based medicine, and nutraceutical treatments are excellent complements or alternatives to medications. Oftentimes, these interventions allow us to use medication for a shorter time, or be able to use lower doses. We also provide and interpret functional lab testing to better investigate nutrient deficiencies and root causes of complicated or distressing symptoms</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" onclick="" data-bs-toggle="modal" data-bs-target="#bipolarModal">
                     <div class="service-item">
+                        <a href="#">
                         <img class="img-fluid w-100 mb-2" src="img/services/Property 1=bipolar.png" alt="">
-                        <h6 class="mb-2 px-2 service-text">Bipolar and related disorders</h6>
+                        <h6 class="mb-2 px-2 service-text">Bipolar and related disorders</h6></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <!-- Bipolar Modal -->
+                <div class="modal fade" id="bipolarModal" tabindex="-1" aria-labelledby="bipolarModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+                        <div class="modal-content custom-modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bipolarModalLabel">Bipolar & Related disorders</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Tired of mood swings turning your job, relationships, and daily life into a constant battle, a roller coaster ride? </p>
+                                <p>Discover stability and regain control over your life with our comprehensive mood management, tailored treatment plans. Through personalized counseling, evidence-based therapies, and holistic wellness approaches, we guide you towards emotional balance. Say goodbye to the roller coaster ride and embrace calm.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" onclick="" data-bs-toggle="modal" data-bs-target="#addictionModal">
                     <div class="service-item">
+                        <a href="#">
                         <img class="img-fluid w-100 mb-2" src="img/services/Property 1=Chemical.png" alt="">
-                        <h6 class="mb-2 px-2 service-text">Chemical Dependency Services</h6>
+                        <h6 class="mb-2 px-2 service-text">Addiction/Substance use disorders</h6></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <!-- Addiction Modal -->
+                <div class="modal fade" id="addictionModal" tabindex="-1" aria-labelledby="addictionModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+                        <div class="modal-content custom-modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="addictionModalLabel">Addiction/Substance use disorders</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Addiction is a tenant collecting rent from the owner.</p>
+                                <p>I love to talk so much about this. But, I would rather make this about you and talk about you and your rocky journey. We can combine medications, therapy & support to get the steering wheel under YOUR control.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" onclick="" data-bs-toggle="modal" data-bs-target="#therapyModal">
                     <div class="service-item">
+                        <a href="#">
                         <img class="img-fluid w-100 mb-2" src="img/services/Property 1=TMS.png" alt="">
-                        <h6 class="mb-2 px-2 service-text">Therapy & Medication Management</h6>
+                        <h6 class="mb-2 px-2 service-text">Therapy & Medication Management</h6></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <!-- Therapy Modal -->
+                <div class="modal fade" id="therapyModal" tabindex="-1" aria-labelledby="therapyModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+                        <div class="modal-content custom-modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="therapyModalLabel">Therapy & Medication Management</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>If you are looking for either therapy or medication, aren’t sure what you need, or are just looking for someone to treat you the way you deserve to be treated, you’re in the right place. My extensive training in psycho-therapeutic disciplines helps me bring balance amongst the dosing of bio-psycho-social- nutritional - spiritual well being, getting you quickly, more efficiently to yourself and relieve you from suffering.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" onclick="" data-bs-toggle="modal" data-bs-target="#obsessiveModal">
                     <div class="service-item">
+                        <a href="#">
                         <img class="img-fluid w-100 mb-2" src="img/services/Property 1=OCD.png" alt="">
-                        <h6 class="mb-2 px-2 service-text">Obsessive Compulsive disorder</h6>
+                        <h6 class="mb-2 px-2 service-text">Obsessive Compulsive disorder</h6></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <!-- Obsessive Modal -->
+                <div class="modal fade" id="obsessiveModal" tabindex="-1" aria-labelledby="obsessiveModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+                        <div class="modal-content custom-modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="obsessiveModalLabel">Obsessive Compulsive disorder</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>While research suggests that OCD is treatable in 65-85% of cases, it's essential to note that these statistics are based on general population data. Recognizing that each individual's experience is unique, is my niche. I make sure that I don't place you in the general population. We will try to find a solution that if not cures the problem, will atleast assist you to where it no longer controls you.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" onclick="" data-bs-toggle="modal" data-bs-target="#ptsdModal">
                     <div class="service-item">
+                        <a href="#">
                         <img class="img-fluid w-100 mb-2" src="img/services/Property 1=PTSD.png" alt="">
-                        <h6 class="mb-2 px-2 service-text">PTSD & Trauma Recovery</h6>
+                        <h6 class="mb-2 px-2 service-text">PTSD & EMDR- Trauma Recovery</h6></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <!-- PTSD Modal -->
+                <div class="modal fade" id="ptsdModal" tabindex="-1" aria-labelledby="ptsdModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+                        <div class="modal-content custom-modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ptsdModalLabel">PTSD & EMDR- Trauma Recovery</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Emotions pushed to the back seat, now overpowering you by taking the steering wheel?</p>
+                                <p>Medications have proven efficacy for acute PTSD; Chronic PTSD requires a targeted approach to rewire the brain, and I am adeptly trained in evidence-based techniques such as Eye Movement Desensitization and Reprocessing (EMDR) and Cognitive Behavioral Therapy (CBT). These methods have proven efficacy in promoting healing and reducing stress and stress related neuronal death.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" onclick="" data-bs-toggle="modal" data-bs-target="#esketamineModal">
                     <div class="service-item">
+                        <a href="#">
                         <img class="img-fluid w-100 mb-2" src="img/services/Property 1=Esketamine.png" alt="">
-                        <h6 class="mb-2 px-2 service-text">Esketamine</h6>
+                        <h6 class="mb-2 px-2 service-text">Esketamine</h6></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <!-- Esketamine Modal -->
+                <div class="modal fade" id="esketamineModal" tabindex="-1" aria-labelledby="esketamineModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+                        <div class="modal-content custom-modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="esketamineModalLabel">Depression</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Embarking on a quest for mental health, when traditional medications didn't work?</p>
+                                <p>Recently FDA-approved for depression, esketamine demonstrates its efficacy in as little as the first week. As a REM certified provider, I am equipped to guide you through this transformative journey. Curious about whether you qualify for this procedure? Feel free to ask[please make it a link so it gets connected to book consultation page], and let's explore the potential for positive change together."</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" onclick="" data-bs-toggle="modal" data-bs-target="#geneticModal">
                     <div class="service-item">
+                        <a href="#">
                         <img class="img-fluid w-100 mb-2" src="img/services/Property 1=Genetic Testing.png" alt="">
-                        <h6 class="mb-2 px-2 service-text">Genetic Testing</h6>
+                        <h6 class="mb-2 px-2 service-text">Genetic Testing</h6></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <!-- Genetic Modal -->
+                <div class="modal fade" id="geneticModal" tabindex="-1" aria-labelledby="geneticModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+                        <div class="modal-content custom-modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="geneticModalLabel">Genetic Testing</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Multiple medication failures, minimal to no improvement in mood, feeling weary of being treated as a guinea pig treated are some reasons to have genetic testing done. These tests need to be ordered via special labs and are covered by insurance for most part.</p>
+                                <p>Genetic testing can help me provide you with personalized medication treatments, predict responses to specific medications, and optimize your medication regimen.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" onclick="">
                     <div class="service-item">
-                        <img class="img-fluid w-100 mb-2" src="img/services/Property 1=TMS.png" alt="">
+                        <a href=" https://neurostar.com/">
+                        <img class="img-fluid w-100 mb-2" src="img/services/Property 1=TMS.png" alt=""> </a>
                         <h6 class="mb-2 px-2 service-text">Transcranial Magnetic Stimulation (TMS)</h6>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" onclick="" data-bs-toggle="modal" data-bs-target="#schizophreniaModal">
                     <div class="service-item">
+                        <a href="#">
                         <img class="img-fluid w-100 mb-2" src="img/services/Property 1=sc.png" alt="">
-                        <h6 class="mb-2 px-2 service-text">Schizophrenia Spectrum & other psychotic disorders</h6>
+                        <h6 class="mb-2 px-2 service-text">Schizophrenia Spectrum & other psychotic disorders</h6></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
-                        <img class="img-fluid w-100 mb-2" src="img/services/Property 1=placeholder.png" alt="">
-                        <h6 class="mb-2 px-2 service-text">Placeholder text</h6>
+                <!-- Schizophrenia Modal -->
+                <div class="modal fade" id="schizophreniaModal" tabindex="-1" aria-labelledby="schizophreniaModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+                        <div class="modal-content custom-modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="schizophreniaModalLabel">Schizophrenia Spectrum & other psychotic disorders</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Navigating sensory disruptions, such as hearing numerous voices and experiencing movements, or witnessing a loved one going through these challenges, can strain familial relationships. If you find yourself having burnt bridges with your family during these disruptions and yearn for stability, you are not alone.</p>
+                                <p>Drawing from my personal experience of closely observing a family member undergoing similar struggles, I empathize with the complexities involved. Together, we can explore these lived experiences and collaboratively devise strategies to navigate challenging situations. Although limited, by leveraging available tools and skills, we can work towards regaining highest possible stability and fostering improved relationships within the family unit.</p> 
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" onclick="" data-bs-toggle="modal" data-bs-target="#adhdModal">
                     <div class="service-item">
+                        <a href="#">
                         <img class="img-fluid w-100 mb-2" src="img/services/Property 1=placeholder.png" alt="">
-                        <h6 class="mb-2 px-2 service-text">Placeholder text</h6>
+                        <h6 class="mb-2 px-2 service-text">ADHD</h6></a>
+                    </div>
+                </div>
+                <!-- ADHD Modal -->
+                <div class="modal fade" id="adhdModal" tabindex="-1" aria-labelledby="adhdModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+                        <div class="modal-content custom-modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="adhdModalLabel">Depression</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Whether you are an adult or an adolescent grappling with academic challenges, impulsivity in social settings, disorganization in schoolwork, inattentiveness, behavioral issues, or difficulty with transitions, or if you are a parent of someone facing ADHD-related challenges, the journey can be emotionally draining. In my professional approach, I employ approved rating scales and comprehensive testing procedures to arrive at a confident and accurate diagnosis, ensuring a thorough understanding of the complexities involved, rather than relying on a brief online questionnaire</p>
+                                <p>Implementing this approach enhances the continuity of care and minimizes interruptions in the assessment and treatment. I ensure a seamless and thorough evaluation, contributing to a more cohesive and continuous care experience for individuals facing ADHD-related challenges and their families.</p> 
+                               
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s" onclick="" data-bs-toggle="modal" data-bs-target="#autismModal">
+                    <div class="service-item">
+                        <a href="#">
+                        <img class="img-fluid w-100 mb-2" src="img/services/Property 1=placeholder.png" alt="">
+                        <h6 class="mb-2 px-2 service-text">Autism spectrum disorder</h6></a>
+                    </div>
+                </div>
+                <!-- Autism Modal -->
+                <div class="modal fade" id="autismModal" tabindex="-1" aria-labelledby="autismModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+                        <div class="modal-content custom-modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="autismModalLabel">Autism Spectrum disorder</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>It's crucial to recognize the diversity of experiences within the autism spectrum. Some individuals may experience greater challenges, while others may excel in certain areas. I embrace the concept of neurodiversity and emphasize on the importance of recognizing and embracing the differences in cognitive functioning and sensory processing.</b></p> 
+                                <p>I use the RAADS- R scale to evaluate your experiences during social interactions.</p>
+                                <p>This approach allows me to tailor interventions based on the patient's developmental age rather than chronological age, contributing to a smoother and more tailored treatment process.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
        
               
-            </div>
         </div>
     </div>
     <!-- Service End -->
@@ -214,31 +479,38 @@
                             </ul>                    
                         </div>
 
-                        <!-- Column 2: Office Hours -->
-                        <div class="col-md-4">
+                         <!-- Column 2: Office Hours -->
+                         <div class="col-md-4">
                             <h4 class="text-dark mb-3">Office Hours</h4>
-                            <p>Mon: 9 AM - 3 PM <br>
-                                Wed: 9 AM - 3 PM <br>
-                                Fri: 9 AM - 3 PM</p>
+                            <p>Mondays - 9AM - 3PM<br>
+                                Tuesdays - 7AM - 9AM<br>
+                                Wednesdays -  8AM - 6 PM<br>
+                                Thursdays - 7AM - 9AM<br>
+                                Fridays - 9AM - 3 PM <br></p>
                             Weekends and holidays
                                 <ul class="list-unstyled">
-                                    <a href="#"><li class="btn-nkd">Request here</li></a>
+                                    <a href="https://intakeq.com/new/4sfupn"><li class="btn-nkd">Request here</li></a>
                                 </ul>                    
 
+                                <button type="button" class="btn btn-primary py-3 wow fadeInUp" data-bs-toggle="modal" data-bs-target="#readMoreModal" style="border-radius:100px;">
+                                    Patient portal
+                                </button>
                             </div>
+
+
 
                         <!-- Column 3: Office Address -->
                         <div class="col-md-4">
                             <h4 class="text-dark mb-3">Office</h4>
                             <img class="img-fluid w-50 mb-2" src="img/logo-footer.svg" alt="">
                             <p>Arête Psychiatry<br>
-                            420 N. Carroll Avenue, #140<br>
-                            Southlake, Texas-76092.</p>
+                            305 Miron Drive,<br>
+                            Southlake, TX-76092.</p>
                             <div class="d-flex mt-2">
                                 <a class="btn btn-lg-square btn-primary me-3" href="#">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a class="btn btn-lg-square btn-primary me-2" href="#">
+                                <a class="btn btn-lg-square btn-primary me-2" href="https://www.instagram.com/aretepsychiatry/">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                             </div>
