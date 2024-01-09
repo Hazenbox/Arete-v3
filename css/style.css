@@ -34,14 +34,13 @@
 
 .btn.btn-primary {
   font-size: 15px;
-  padding: 1.35em !important; 
+  padding: 1.35em !important;
 }
 
 .btn.btn-primary:hover {
-  background-color: #30B01D; /* Changes the background color on hover */
-  border-color: #30B01D;
+  background-color: #30b01d; /* Changes the background color on hover */
+  border-color: #30b01d;
 }
-
 
 .btn-primary,
 .btn-outline-primary:hover {
@@ -50,14 +49,13 @@
 
 .btn.btn-secondary {
   font-size: 15px;
-  padding: 1.35em !important; 
+  padding: 1.35em !important;
   background-color: #ffffff;
-
 }
 
 .btn-secondary:hover,
 .btn-outline-secondary:hover {
-  background-color: #30B01D !important;
+  background-color: #30b01d !important;
 }
 
 .btn-square {
@@ -120,8 +118,7 @@
   background: var(--bs-light);
 }
 
-
-.btn-nkd{
+.btn-nkd {
   background: none;
   font-family: inter;
   font-size: 14px;
@@ -129,38 +126,37 @@
   padding: 0;
   cursor: pointer;
   outline: inherit;
-  color:#0C513F;
+  color: #0c513f;
   transition: all 0.3s ease; /* Smooth transition for hover effects */
-
 }
 
 .btn-nkd:hover {
-  color: #0C513F; /* Change text color on hover */
+  color: #0c513f; /* Change text color on hover */
   cursor: pointer; /* Change cursor to indicate clickable */
   text-decoration: underline; /* Add underline to indicate it's a link */
   transform: scale(1.02); /* Slightly scale up on hover */
 }
 
 .carousel-item-bg {
-  background: url('img/carousel-4.jpg') no-repeat center center;
+  background: url("img/carousel-4.jpg") no-repeat center center;
   background-size: cover; /* This ensures the image covers the entire div */
 }
 
 /* Adjustments for mobile screens */
 @media (max-width: 768px) {
   .carousel-item-bg {
-      background-position: center; /* Adjust this value to focus on a specific part of the image */
-      background-size: 150%; /* Adjust the background size as needed */
+    background-position: center; /* Adjust this value to focus on a specific part of the image */
+    background-size: 150%; /* Adjust the background size as needed */
   }
   .mobile-top-padding {
-      padding-top: 20px; /* Top padding for mobile screens */
+    padding-top: 20px; /* Top padding for mobile screens */
   }
 }
 
 .nkd-icon {
   /* Style your icon here. For example: */
   font-size: 14px;
-  color: #0C513F ;
+  color: #0c513f;
 }
 /*modal*/
 .custom-modal-dialog {
@@ -175,23 +171,30 @@
   border-radius: 100px; /* Rounded corners for the button */
 }
 
-
 /* footer links*/
-.footer-link { 
-color: rgba(72, 67, 67, 0.75) !important;
-font-family: Inter;
-font-size: 13px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+.footer-link {
+  color: rgba(72, 67, 67, 0.75) !important;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-
-.footer-link.hover{
-  color: #0C513F !important;
+.footer-link.hover {
+  color: #0c513f !important;
   text-decoration: underline;
 }
 
+#logo-image {
+  display: none; /* Hide by default */
+}
+
+@media (max-width: 992px) {
+  #logo-image {
+    display: block; /* Show only on screens smaller than 992px */
+  }
+}
 
 /*** Navbar ***/
 .sticky-top {
@@ -199,7 +202,7 @@ line-height: normal;
   transition: 0.5s;
 }
 .navbar .navbar-nav .nav-link {
-  margin-right: 35px;
+  margin-right: 32px;
   padding: 20px 0;
   color: var(--bs-dark);
   font-size: 15px;
@@ -207,30 +210,28 @@ line-height: normal;
   outline: none;
 }
 
-.navbar .navbar-nav c
-.navbar .navbar-nav .nav-link.active {
-  
-  color: #0C513F;
+.navbar .navbar-nav c .navbar .navbar-nav .nav-link.active {
+  color: #0c513f;
   font-weight: 500 !important;
 }
 
 .nav-link.active {
-  color: #0C513F !important; /* Or any green shade you prefer */
+  color: #0c513f !important; /* Or any green shade you prefer */
 }
 
 @media (max-width: 408px) {
   .navbar-nav .nav-link {
-      font-size: 12px; /* Smaller font size */
-      padding: 5px 10px; /* Reduced padding */
+    font-size: 12px; /* Smaller font size */
+    padding: 5px 10px; /* Reduced padding */
   }
 
   .navbar-brand img {
-      max-width: 200px; /* Smaller logo width */
-      height: auto; /* Maintain aspect ratio */
+    max-width: 200px; /* Smaller logo width */
+    height: auto; /* Maintain aspect ratio */
   }
 
   .navbar-toggler {
-      padding: 5px; /* Smaller toggler padding */
+    padding: 5px; /* Smaller toggler padding */
   }
 
   /* Other styles as needed */
@@ -238,35 +239,33 @@ line-height: normal;
 
 @media (min-width: 409px) and (max-width: 767px) {
   .navbar-nav .nav-link {
-      font-size: 12px; /* Smaller font size */
-      padding: 5px 10px; /* Reduced padding */
+    font-size: 12px; /* Smaller font size */
+    padding: 5px 10px; /* Reduced padding */
   }
 
   .navbar-brand img {
-      max-width: 220px; /* Smaller logo width */
-      height: auto; /* Maintain aspect ratio */
+    max-width: 220px; /* Smaller logo width */
+    height: auto; /* Maintain aspect ratio */
   }
 
   .navbar-toggler {
-      padding: 5px; /* Smaller toggler padding */
+    padding: 5px; /* Smaller toggler padding */
   }
 
   /* Other styles as needed */
 }
 
-
-@media (min-width: 768px) {
+@media (min-width: 991px) {
   .navbar-nav .nav-link {
-      font-size: 12px; /* Smaller font size */
-      padding: 5px 10px; /* Reduced padding */
+    font-size: 12px; /* Smaller font size */
+    padding: 5px 10px; /* Reduced padding */
   }
   .navbar-toggler {
-      padding: 5px; /* Smaller toggler padding */
+    padding: 5px; /* Smaller toggler padding */
   }
 
   /* Other styles as needed */
 }
-
 
 .navbar .dropdown-toggle::after {
   border: none;
@@ -297,17 +296,13 @@ line-height: normal;
     height: 68px;
   }
 
-
- 
-
-@media (min-width: 1024px) and (max-width: 1285px) {
-  .navbar {
-      width: 90%; /* Adjust this value as needed */
+  @media (min-width: 1024px) and (max-width: 1285px) {
+    .navbar {
+      width: 100%; /* Adjust this value as needed */
       margin: 0 auto; /* This centers the navbar if it's not full width */
+    }
+    /* Additional styles if needed */
   }
-  /* Additional styles if needed */
-}
-
 
   .navbar .nav-item .dropdown-menu {
     display: block;
@@ -340,15 +335,14 @@ line-height: normal;
   padding: 50px;
   text-align: center;
   border-radius: 40px;
-
 }
 
 .testimonial-header {
-  color: #0C513F !important;
+  color: #0c513f !important;
 }
 
-
 #testimonialCarousel {
+  height: 300px; /* Example height, adjust as necessary */
 }
 
 .testimonial-card {
@@ -357,7 +351,6 @@ line-height: normal;
   max-width: 800px; /* Adjust max-width as needed */
   min-width: 300px;
 }
-
 
 .testimonial-text {
   font-size: 1rem !important;
@@ -398,61 +391,56 @@ line-height: normal;
 .testimonial-control-next-icon,
 .testimonial-control-prev span,
 .testimonial-control-next span {
-    background-image: none; /* Remove default arrows */
-    color: #0C513F; /* Apply your color */
-    font-size: 20px; /* Adjust size as needed */
+  background-image: none; /* Remove default arrows */
+  color: #0c513f; /* Apply your color */
+  font-size: 20px; /* Adjust size as needed */
 }
-
 
 .testimonial-control-prev,
 .testimonial-control-next {
-    position: absolute;
-    top: 50%; /* Center vertically */
-    transform: translateY(-50%);
-    z-index: 100; /* Ensure they are above other content */
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  z-index: 100; /* Ensure they are above other content */
 }
 
 .testimonial-control-prev {
-    left: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
 }
 
 .testimonial-control-next {
-    right: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
 }
-
-
-
 
 /* Custom CSS for Carousel Arrows on Small Screens */
 @media (max-width: 767px) {
-  .testimonial-control-prev, .testimonial-control-next {
-      position: absolute;
-      top: 50%; /* Align vertically */
-      transform: translateY(-50%);
+  .testimonial-control-prev,
+  .testimonial-control-next {
+    position: absolute;
+    top: 50%; /* Align vertically */
+    transform: translateY(-50%);
   }
 
   .testimonial-control-prev {
-      left: -30px; /* Align to the left edge */
+    left: -30px; /* Align to the left edge */
   }
 
   .testimonial-control-next {
-      right: -30px; /* Align to the right edge */
+    right: -30px; /* Align to the right edge */
   }
-  
-.testimonial-text {
-  font-size: 14px !important;
-  color: #555;
-}
-.testimonial-card {
-  padding: 20px;
-  margin: 0 auto; /* Centering the card */
-  min-width: 200px;
-}
+
+  .testimonial-text {
+    font-size: 14px !important;
+    color: #555;
+  }
+  .testimonial-card {
+    padding: 20px;
+    margin: 0 auto; /* Centering the card */
+    min-width: 200px;
+  }
 }
 
 /*** end ***/
-
-
 
 .carousel-caption {
   top: 0;
@@ -496,13 +484,11 @@ line-height: normal;
     url(../img/testimonial.jpg) center center no-repeat;
     background-size: cover; */
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   position: relative;
-  z-index: 10; 
+  z-index: 10;
   border-radius: 20px;
-  
-  
 }
 
 .page-header .breadcrumb-item + .breadcrumb-item::before {
@@ -511,22 +497,25 @@ line-height: normal;
 
 .page-header .breadcrumb-item,
 .page-header .breadcrumb-item a {
-    font-size: 18px;
-    color: var(--bs-white);
+  font-size: 18px;
+  color: var(--bs-white);
 }
-
 
 .page-header2 {
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
-  background-color: #0C513F;
+  background-color: #33787d;
   border-radius: 40px;
   width: 93%;
   margin: 0 auto;
-  top:24px;
   position: relative;
+}
 
+@media (max-width: 768px) {
+  .page-header2 {
+    margin-top: 25px !important;
+  }
 }
 
 /*** Features ***/
@@ -559,7 +548,6 @@ line-height: normal;
 
 .experience .nav-pills .nav-link.active {
   color: #ffffff;
-  
 }
 
 .experience .tab-content hr {
@@ -646,9 +634,8 @@ line-height: normal;
   }
 }
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-
 
 .modal-video .modal-dialog {
   position: relative;
@@ -676,13 +663,13 @@ body {
 }
 
 /*** Awards ***/
-.awards-images{
-display: flex;
-align-items: flex-end;
-align-content: flex-end;
-flex-shrink: 0;
-flex-wrap: wrap;
-padding: 1rem;
+.awards-images {
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  padding: 1rem;
 }
 
 /*** Service ***/
@@ -701,14 +688,11 @@ padding: 1rem;
   z-index: -1;
 }
 
-
-
-
 .service-item {
   position: relative;
   height: 100%;
   padding: 5px 5px;
-  border-radius:20px;
+  border-radius: 20px;
   background: var(--bs-white);
   box-shadow: 0 0 45px rgba(0, 0, 0, 0.05);
   color: #000 !important;
@@ -735,8 +719,8 @@ padding: 1rem;
   z-index: 1;
 }
 
-.service-text{
-  color: var( --bs-gray-dark) !important;
+.service-text {
+  color: var(--bs-gray-dark) !important;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -744,8 +728,8 @@ padding: 1rem;
   letter-spacing: -0.16px;
 }
 
-.pform-title{
-  color: #2E2F35 !important;
+.pform-title {
+  color: #2e2f35 !important;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -753,15 +737,13 @@ padding: 1rem;
   letter-spacing: -0.16px;
 }
 
-
-
-.bod-sm{
-color: #2E2F35 !important;
-font-family: Inter;
-font-size: 14px !important;
-font-style: normal;
-font-weight: 400;
-line-height: 140%; /* 19.6px */
+.bod-sm {
+  color: #2e2f35 !important;
+  font-family: Inter;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
 }
 
 .service-item:hover h5,
@@ -824,7 +806,6 @@ line-height: 140%; /* 19.6px */
 .team-item:hover .team-social .btn {
   opacity: 1;
 }
-
 
 /*** Contact ***/
 @media (min-width: 992px) {

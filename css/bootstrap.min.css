@@ -2723,8 +2723,8 @@ fieldset:disabled .btn {
 }
 .btn-primary {
   color: #fff;
-  background-color: #0c513f;
-  border-color: #0c513f;
+  background-color: #33787D;
+  border-color: #33787D;
   border-radius: 30px;
 }
 .btn-primary:hover {
@@ -3864,10 +3864,10 @@ fieldset:disabled .btn {
   display: block;
 }
 .navbar {
-  position: fixed;
+  position: relative;
   top: 30px; /* Ensures navbar is fixed to the top of the viewport */
   left: 50%; /* Aligns navbar to the left edge of the viewport */
-  width: 80%; /* Sets the navbar width to full viewport width */
+  width: 100%; /* Sets the navbar width to full viewport width */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -3936,7 +3936,7 @@ fieldset:disabled .btn {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .navbar {
       padding-left: 16px;
       padding-right: 16px;
@@ -3951,6 +3951,27 @@ fieldset:disabled .btn {
   }
 }
 
+@media (min-width: 1200px) {
+  .navbar {
+      max-width: 936px;
+  }
+  .navbar-nav {
+      margin-right: 0 !important; /* Aligns nav items to the left */
+  }
+
+  .navbar .container {
+      padding-right: 0 !important;
+      padding-left: 0 !important; /* Removes padding from the container */
+  }
+  
+  /* If the padding is on the nav-links, adjust as follows */
+  .navbar-nav .nav-link {
+      padding-right: 0 !important;
+      padding-left: 0 !important; /* Removes padding from individual nav links */
+  }
+
+  /* Additional adjustments if needed */
+}
 
 
 @media (max-width: 768px) {
