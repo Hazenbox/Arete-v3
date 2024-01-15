@@ -30,6 +30,10 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Prosto+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -106,9 +110,9 @@
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-lg-7 text-start">
-                                    <h1 class="display-1 text-white animated slideInRight mb-3">Arête Psychiatry </br><!--</h1> 
-                                    <h2 class="display-1 text-white animated slideInRight mb-3" style="font-size:calc(1.325rem + 0.9vw);">--><i>Building bonds, Brain to SOUL...</i></h2>
-                                    <p class=" animated slideInRight mb-5 " style="line-height:1.6; opacity: 80%; font-weight: 500;">Mental Health, Addiction Medicine, Medication Management and Psychotherapy</p>
+                                    <h1 class="text-white animated slideInRight mb-3" style="font-size: 2.7rem ">Arête Psychiatry </br></h1> 
+                                    <h5 class="text-white animated slideInRight mb-3"><i>Building bonds, Brain to SOUL...</i></h3>
+                                    <h5 class="text-white animated slideInRight mb-3"><b>Medical Psychiatry, Behavioral health, Addiction Medicine, Medication Management and Psychotherapy</b></h3>
                                     <a href="https://intakeq.com/new/4sfupn" class="btn btn-primary py-3 px-5 animated slideInRight" style="width: 180px;">Book consultation</a>
                                 </div>
                             </div>
@@ -148,8 +152,10 @@
     <!-- Carousel End -->
 
 
-    <a href="https://intakeq.com/new/4sfupn" class="btn-floating-bottom py-3 px-5">Book consultation</a>
-
+    <div class="btn-container" style="position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%); z-index: 999; width: 93%; display: flex; justify-content: space-around;">
+        <a href="tel:+18179347065" class="btn-call-now">Call Now</a>
+        <a href="https://intakeq.com/new/4sfupn" class="btn-floating-bottom">Book consultation</a>
+    </div>
     
     <!-- Services start -->
 
@@ -158,7 +164,7 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item">
-                        <img class="img-fluid w-100 mb-2" src="img/services/MentalHealth.png" alt="">
+                        <img class="img-fluid w-100 mb-2" src="img/services/mental-health.png" alt="">
                         <p class="mb-2 px-2 service-text">Exceptional psychiatry</p>
                     </div>
                 </div>
@@ -170,12 +176,12 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item">
-                        <img class="img-fluid w-100 mb-2" src="img/services/Property 1=TMS.png" alt="">
+                        <img class="img-fluid w-100 mb-2" src="img/services/Property 1=Variant21.png" alt="">
                         <p class="mb-2 px-2 service-text">Innovative, Non- Invasive Interventional procedures</p>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center mt-4">
-                    <a href="service.html" class="btn btn-secondary py-3 wow fadeInUp" style="border-radius:100px;">Check all services</a>
+                    <a href="service.html" class="btn-sec py-3 wow fadeInUp" style="border-radius:100px;width: 170px;">Check all services</a>
                 </div>
     </div>
 
@@ -192,7 +198,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-12 col-sm-12 col-md-12 ">
                 <div class="text-center pb-4 wow fadeIn ">
-                    <h3><b>A little different from conventional psychiatrists</b></h3>
+                    <h3 style="font-family: Lemon"><b>A little different from conventional psychiatrists - here's how</b></h3>
                 </div>
             </div>
         </div>
@@ -213,7 +219,25 @@
                     <div class="mb-3">
                         <span class="material-symbols-rounded" style="font-size: 50px; color: #30B01D;">cognition</span>
                     </div>
-                    <h6 class="mb-3" style="color: var(--bs-gray-dark);">Integrative<br>Psychiatry</h6>
+                    <h6 class="mb-3" style="color: var(--bs-gray-dark);">Integrative<br>psychiatry</h6>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-sm-2 col-md-3 wow fadeIn" data-wow-delay="0.3s">
+                <div class="text-center h-100 p-3">
+                    <div class="mb-3">
+                        <span class="material-symbols-rounded" style="font-size: 50px; color: #30B01D;">psychology</span>
+                    </div>
+                    <h6 class="mb-3" style="color: var(--bs-gray-dark);">EMDR</h6>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-sm-2 col-md-3 wow fadeIn" data-wow-delay="0.3s">
+                <div class="text-center h-100 p-3">
+                    <div class="mb-3">
+                        <span class="material-symbols-rounded" style="font-size: 50px; color: #30B01D;">person_check</span>
+                    </div>
+                    <h6 class="mb-3" style="color: var(--bs-gray-dark);">Accepting<br>new patients</h6>
                 </div>
             </div>
 
@@ -227,6 +251,16 @@
                 </div>
             </div>
 
+            <div class="col-lg-2 col-sm-2 col-md-3 wow fadeIn" data-wow-delay="0.5s">
+                <div class="text-center h-100 p-3">
+                    <div class="mb-3">
+                        <span class="material-symbols-rounded" style="font-size: 50px; color: #30B01D;">
+                            diversity_1
+                            </span>                    </div>
+                    <h6 class="mb-3" style="color: var(--bs-gray-dark);">Uniquely<br>holistic</h6>
+                </div>
+            </div>
+
             <div class="col-lg-2 col-sm-2 col-md-3 wow fadeIn" data-wow-delay="0.7s">
                 <div class="text-center h-100 p-3">
                     <div class="mb-3">
@@ -234,6 +268,35 @@
                             mood
                             </span>                    </div>
                     <h6 class="mb-3" style="color: var(--bs-gray-dark);">Convenience</h6>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-2 col-md-3 wow fadeIn" data-wow-delay="0.5s">
+                <div class="text-center h-100 p-3">
+                    <div class="mb-3">
+                        <span class="material-symbols-rounded" style="font-size: 50px; color: #30B01D;">
+                            forum
+                            </span>                    </div>
+                    <h6 class="mb-3" style="color: var(--bs-gray-dark);">Open and transparent <br>communication</h6>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-sm-2 col-md-3 wow fadeIn" data-wow-delay="0.5s">
+                <div class="text-center h-100 p-3">
+                    <div class="mb-3">
+                        <span class="material-symbols-rounded" style="font-size: 50px; color: #30B01D;">
+                            translate
+                            </span>                    </div>
+                    <h6 class="mb-3" style="color: var(--bs-gray-dark);">Trilingual</h6>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-sm-2 col-md-3 wow fadeIn" data-wow-delay="0.5s">
+                <div class="text-center h-100 p-3">
+                    <div class="mb-3">
+                        <span class="material-symbols-rounded" style="font-size: 50px; color: #30B01D;">
+                            distance
+                            </span>                    </div>
+                    <h6 class="mb-3" style="color: var(--bs-gray-dark);">Available in Texas, <br>Louisiana & India </h6>
                 </div>
             </div>
 
@@ -248,11 +311,11 @@
             </div>
 
            <!-- Read More button -->
+
             <div class="d-flex justify-content-center mt-4">
-                <button type="button" class="btn btn-secondary py-3 wow fadeInUp" data-bs-toggle="modal" data-bs-target="#readMoreModal" style="border-radius:100px;">
-                    Read more
-                </button>
+                <a href="service.html" class="btn-sec py-3 wow fadeInUp" data-bs-toggle="modal" data-bs-target="#readMoreModal" style="border-radius:100px; width: 110px;">Read more</a>
             </div>
+</div>
 
             <!-- Modal -->
             <div class="modal fade" id="readMoreModal" tabindex="-1" aria-labelledby="readMoreModalLabel" aria-hidden="true">
@@ -305,7 +368,7 @@
 
 <!-- Testimonials start -->
     <div class="container">
-      <div class="bg-sec testimonial-section">
+      <div class="blue-container testimonial-section">
         <div class="text-center">
             <i class="fas fa-quote-left fa-2x"></i>
             <div class="section-header text-center wow fadeIn">
@@ -404,22 +467,22 @@
                         <div class="col-md-4">
                             <h4 class="text-dark mb-3">Links</h4>
                             <ul class="list-unstyled">
-                                <a href="#"><li class="btn-nkd pb-1">National Alliance on Mental Illness</li></a>
-                                <a href="#"><li class="btn-nkd pb-1">Depression and Bipolar Support Alliance</li></a>
-                                <a href="#"><li class="btn-nkd pb-1">National Institute of Mental Health</li></a>
-                                <a href="#"><li class="btn-nkd pb-1">American Psychiatric Association</li></a>
+                                <a href="https://www.nami.org/#" target="_blank"><li class="btn-nkd pb-1">National Alliance on Mental Illness</li></a>
+                                <a href="https://www.dbsalliance.org/" target="_blank"><li class="btn-nkd pb-1">Depression and Bipolar Support Alliance</li></a>
+                                <a href="https://www.nimh.nih.gov/index.shtml" target="_blank"><li class="btn-nkd pb-1">National Institute of Mental Health</li></a>
+                                <a href="https://www.psychiatry.org/patients-families" target="_blank"><li class="btn-nkd pb-1">American Psychiatric Association</li></a>
                             </ul>
             
                             <p class="text-dark mb-1"><b>Crisis Resources</b></p>
                             <ul class="list-unstyled">
-                                <a href="#"><li class="btn-nkd pb-1">National Suicide Prevention Lifeline<br>(1-800-273-TALK)</li></a>
-                                <a href="#"><li class="btn-nkd pb-1">Texas HHS Mental Health Crisis Services</li></a>
-                                <a href="#"><li class="btn-nkd pb-1">MHMR Crisis Relief</li></a>
+                                <a href="https://suicidepreventionlifeline.org/" target="_blank"><li class="btn-nkd pb-1">National Suicide Prevention Lifeline<br>(1-800-273-TALK)</li></a>
+                                <a href="https://hhs.texas.gov/services/mental-health-substance-use/mental-health-crisis-services" target="_blank"><li class="btn-nkd pb-1">Texas HHS Mental Health Crisis Services</li></a>
+                                <a href="http://www.mhmrtc.org/Services/Mental-Health-Services/Crisis-Relief" target="_blank"><li class="btn-nkd pb-1">MHMR Crisis Relief</li></a>
                             </ul>                    
                         </div>
 
-                        <!-- Column 2: Office Hours -->
-                        <div class="col-md-4">
+                         <!-- Column 2: Office Hours -->
+                         <div class="col-md-4">
                             <h4 class="text-dark mb-3">Office Hours</h4>
                             <p>Mondays - 9AM - 3PM<br>
                                 Tuesdays - 7AM - 9AM<br>
@@ -429,26 +492,33 @@
                             Weekends and holidays
                                 <ul class="list-unstyled">
                                     <a href="https://intakeq.com/new/4sfupn"><li class="btn-nkd">Request here</li></a>
-                                </ul>                    
-
-                                <button type="button" class="btn btn-primary py-3 wow fadeInUp" data-bs-toggle="modal" data-bs-target="#readMoreModal" style="border-radius:100px;">
-                                    Patient portal
-                                </button>
+                                </ul>                   
+                                <a href="https://intakeq.com/new/4sfupn" class="btn btn-primary py-3 px-5" style="width: 140px;">Patient portal</a>
                             </div>
 
 
-                        <!-- Column 3: Office Address -->
-                        <div class="col-md-4">
+
+                         <!-- Column 3: Office Address -->
+                         <div class="col-md-4">
                             <h4 class="text-dark mb-3">Office</h4>
                             <img class="img-fluid w-50 mb-2" src="img/logo-footer.svg" alt="">
-                            <p>Arête Psychiatry<br>
+            
+                            <p><b>Address</b><br>
+                            Arête Psychiatry<br>
                             305 Miron Drive,<br>
-                            Southlake, TX-76092.</p>
+                            Southlake, TX-76092.
+                            <ul class="list-unstyled">
+                                <a href="https://maps.app.goo.gl/N9bVZNbTTidc713r9?g_st=iw" target="_blank"><li class="btn-nkd">Directions</li></a>
+                            </ul>  </p>
+                            <p><b>Contact information</b><br>
+                               Phone number: 817.934.7065 <br>
+                               Fax number: 817.612.3600
+                            </p>
                             <div class="d-flex mt-2">
-                                <a class="btn btn-lg-square btn-primary me-3" href="#">
+                                <a class="btn btn-lg-square btn-primary me-3" href="#" target="_blank">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a class="btn btn-lg-square btn-primary me-2" href="https://www.instagram.com/aretepsychiatry/">
+                                <a class="btn btn-lg-square btn-primary me-2" href="https://www.instagram.com/aretepsychiatry/" target="_blank">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                             </div>

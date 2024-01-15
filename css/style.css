@@ -12,6 +12,10 @@
   font-weight: 500;
 }
 
+.blue-container {
+  background-color: #c8e6f1;
+}
+
 /*** Spinner ***/
 #spinner {
   opacity: 0;
@@ -340,9 +344,24 @@
 .testimonial-header {
   color: #0c513f !important;
 }
+/* 
+#testimonialCarousel 
+  height: 300px;  Example height, adjust as necessary
+} */
 
-#testimonialCarousel {
-  height: 300px; /* Example height, adjust as necessary */
+@media screen and (max-width: 768px) {
+  /* Adjust the max-width as per your mobile breakpoint */
+  .testimonial-section {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    /* Add any other styles needed for mobile view */
+  }
+  .testimonialCarousel {
+    width: 100%;
+  }
 }
 
 .testimonial-card {
@@ -505,7 +524,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #33787d;
+  color: #0e5b75;
+  background-color: #bce4f3;
   border-radius: 40px;
   width: 93%;
   margin: 0 auto;
