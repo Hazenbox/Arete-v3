@@ -2827,6 +2827,31 @@ fieldset:disabled .btn {
   transition: 0.5s;
 }
 
+.btn-prime {
+  color: #fff;
+  background-color: #0e5b75;
+  border-color: #0e5b75;
+  border-radius: 100px;
+  height: 42px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 15px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  width: 220px !important;
+}
+
+.btn-prime:hover {
+  color: #ffffff;
+  background-color: #30b01d;
+  border-color: #30b01d;
+  animation-name: fadeInUp;
+  border-radius: 100px;
+  transition: 0.5s;
+}
 .btn-check:focus + .btn-secondary,
 .btn-secondary:focus {
   color: #000;

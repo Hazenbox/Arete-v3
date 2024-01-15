@@ -511,7 +511,7 @@
                                 <a href="https://maps.app.goo.gl/N9bVZNbTTidc713r9?g_st=iw" target="_blank"><li class="btn-nkd">Directions</li></a>
                             </ul>  </p>
                             <p><b>Contact information</b><br>
-                               Phone number: 817.934.7065 <br>
+                               Pho  ne number: 817.934.7065 <br>
                                Fax number: 817.612.3600
                             </p>
                             <div class="d-flex mt-2">
@@ -552,13 +552,14 @@
 
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
@@ -567,6 +568,28 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
+<script>
+    $(document).ready(function () {
+    // Existing code for navbar collapse
+    $(document).click(function (event) {
+        var clickover = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("show");
+        if (_opened === true && !clickover.closest('.navbar').length) {
+            $(".navbar-toggler").click();
+        }
+    });
+
+    // New code to prevent background scrolling when modal is open
+    $('.modal').on('show.bs.modal', function () {
+        $('body').addClass('body-modal-open');
+    });
+
+    $('.modal').on('hidden.bs.modal', function () {
+        $('body').removeClass('body-modal-open');
+    });
+});
+</script>
 </body>
 
 </html>

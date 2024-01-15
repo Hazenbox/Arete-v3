@@ -8,6 +8,12 @@
   opacity: 0% !important;
 }
 
+.body-modal-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
 .fw-medium {
   font-weight: 500;
 }
