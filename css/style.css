@@ -342,32 +342,42 @@
 
 /***custm testimonials ***/
 .testimonial-section {
+  position: relative;
   padding: 50px;
   text-align: center;
   border-radius: 40px;
+  height: 520px; /* Set a fixed height */
 }
 
 .testimonial-header {
   color: #0c513f !important;
 }
-/* 
-#testimonialCarousel 
-  height: 300px;  Example height, adjust as necessary
-} */
+
+#testimonialCarousel {
+  position: relative;
+  height: 100%; /* Ensure this takes the full height of the parent */
+}
 
 @media screen and (max-width: 768px) {
   /* Adjust the max-width as per your mobile breakpoint */
   .testimonial-section {
+    position: relative;
     width: 100%;
     padding: 0;
     margin: 0;
     padding-bottom: 40px;
     padding-top: 40px;
-    /* Add any other styles needed for mobile view */
+    height: 660px; /* Set a fixed height */
   }
   .testimonialCarousel {
     width: 100%;
   }
+  .testimonial-control-prev, .testimonial-control-next {
+  position: absolute;
+  top: 10%;
+  z-index: 1000; /* Ensure they are above other content */
+  }
+
 }
 
 .testimonial-card {
@@ -375,6 +385,7 @@
   margin: 0 auto; /* Centering the card */
   max-width: 800px; /* Adjust max-width as needed */
   min-width: 300px;
+  
 }
 
 .testimonial-text {
@@ -388,13 +399,6 @@
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
-}
-
-.testimonial-img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-bottom: 15px;
 }
 
 .author-details {
@@ -420,22 +424,38 @@
   color: #0c513f; /* Apply your color */
   font-size: 20px; /* Adjust size as needed */
 }
+#testimonialCarousel {
+  position: relative;
+}
 
-.testimonial-control-prev,
-.testimonial-control-next {
+/* Basic styling and positioning for arrows */
+.testimonial-control-prev, .testimonial-control-next {
   position: absolute;
-  top: 50%; /* Center vertically */
+  top: 20%;
   transform: translateY(-50%);
-  z-index: 100; /* Ensure they are above other content */
+  z-index: 1000; /* Ensure they are above other content */
 }
 
 .testimonial-control-prev {
-  left: 10px; /* Adjust as needed */
+  left: 10px;
 }
 
 .testimonial-control-next {
-  right: 10px; /* Adjust as needed */
+  right: 10px;
 }
+
+#testimonialCarousel .carousel-inner {
+  overflow: hidden; /* This prevents large testimonials from pushing the arrows */
+}
+
+/* Optional: Adjust arrow size, color, etc. */
+.testimonial-control-prev span, .testimonial-control-next span {
+  font-size: 24px; /* Adjust arrow size */
+  color: #333; /* Adjust arrow color */
+}
+
+
+
 
 /* Custom CSS for Carousel Arrows on Small Screens */
 @media (max-width: 767px) {
