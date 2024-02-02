@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: 
+Disallow: User-agent: *
+Disallow: Disallow: /cgi-bin/
+Disallow: Disallow: /img/
+Disallow: Disallow: /css/
+Disallow: Sitemap: https://aretepsychiatry.life//sitemap.xml
+Sitemap: https://aretepsychiatry.life/
