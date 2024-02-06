@@ -640,6 +640,19 @@
                 }
             });
         });
+
+	document.querySelector('.video-play-button').addEventListener('click', function(e) {
+    e.preventDefault();
+    var video = this.previousElementSibling; // Assuming the video is immediately before the button in the DOM
+    if (video.paused) {
+        video.play();
+        this.style.display = 'none'; // Hide play button
+    } else {
+        video.pause();
+        this.style.display = 'block'; // Show play button
+    }
+});
+    
     </script>
 </body>
 
