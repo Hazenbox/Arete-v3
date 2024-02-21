@@ -644,23 +644,17 @@
 });
     
 $(document).ready(function () {
-    // Play video and hide play button on click
     $('.video-play-button').click(function(e) {
         e.preventDefault();
         var video = $(this).siblings('video')[0]; // Assuming the video is a sibling
         if (video.paused) {
             video.play();
-            $(this).fadeOut(); // Use fadeOut for a smoother transition
+            $(this).fadeOut(); // Hide the play button smoothly
         }
     });
 
-    // Listen for the video being paused
-    $('video').on('pause', function() {
-        $(this).siblings('.video-play-button').fadeIn(); // Show the play button again
-    });
-
-    // Optional: Listen for the video ending and show play button
-    $('video').on('ended', function() {
+    // Show the play button when the video is paused or ends
+    $('video').on('pause ended', function() {
         $(this).siblings('.video-play-button').fadeIn(); // Show the play button again
     });
 });
