@@ -183,9 +183,10 @@
                     <video class="video-fluid" autoplay loop controls>
                         <source src="img/RamyaVideo.mp4" type="video/mp4" />
                     </video>
-		    <a href="#" class="video-play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 48px; color: #30B01D; display: flex; justify-content: center; align-items: center;">
+                     <!-- Play Button -->
+                    <a href="#" class="video-play-button" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 48px; color: #30B01D; display: flex; justify-content: center; align-items: center;">
                         <i class="fas fa-play-circle"></i>
-                    </a>
+                    </a>    
             </div>
         </div>
             
@@ -627,15 +628,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
-        $(document).ready(function () {
-            $(document).click(function (event) {
-                var clickover = $(event.target);
-                var _opened = $(".navbar-collapse").hasClass("show");
-                if (_opened === true && !clickover.closest('.navbar').length) {
-                    $(".navbar-toggler").click();
-                }
-            });
-        });
+
 
 	document.querySelector('.video-play-button').addEventListener('click', function(e) {
     e.preventDefault();
@@ -649,6 +642,29 @@
     }
 });
     
+$(document).ready(function () {
+    // Play video and hide play button on click
+    $('.video-play-button').click(function(e) {
+        e.preventDefault();
+        var video = $(this).siblings('video')[0]; // Assuming the video is a sibling
+        if (video.paused) {
+            video.play();
+            $(this).fadeOut(); // Use fadeOut for a smoother transition
+        }
+    });
+
+    // Listen for the video being paused
+    $('video').on('pause', function() {
+        $(this).siblings('.video-play-button').fadeIn(); // Show the play button again
+    });
+
+    // Optional: Listen for the video ending and show play button
+    $('video').on('ended', function() {
+        $(this).siblings('.video-play-button').fadeIn(); // Show the play button again
+    });
+});
+
+
     </script>
 </body>
 
