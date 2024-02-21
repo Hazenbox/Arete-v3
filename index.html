@@ -647,24 +647,30 @@ $(document).ready(function () {
     $('.video-play-button').click(function(e) {
         e.preventDefault();
         var video = $(this).siblings('video')[0]; // Get the video element
-        var carousel = $(this).closest('.carousel'); // Get the closest carousel ancestor
-        
         if (video.paused) {
+            // Play the video
             video.play();
             $(this).fadeOut(); // Hide the play button
-            carousel.carousel('pause'); // Pause the carousel
+
+            // Request Fullscreen for the video
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.mozRequestFullScreen) { /* Firefox */
+                video.mozRequestFullScreen();
+            } else if (video.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                video.webkitRequestFullscreen();
+            } else if (video.msRequestFullscreen) { /* IE/Edge */
+                video.msRequestFullscreen();
+            }
         }
     });
 
     // Listen for the video being paused or ended
     $('video').on('pause ended', function() {
-        var playButton = $(this).siblings('.video-play-button');
-        var carousel = $(this).closest('.carousel'); // Get the closest carousel ancestor
-
-        playButton.fadeIn(); // Show the play button again
-        carousel.carousel('cycle'); // Resume the carousel
+        $(this).siblings('.video-play-button').fadeIn(); // Show the play button again
     });
 });
+
 
     </script>
 </body>
