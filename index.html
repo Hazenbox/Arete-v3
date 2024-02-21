@@ -646,19 +646,25 @@
 $(document).ready(function () {
     $('.video-play-button').click(function(e) {
         e.preventDefault();
-        var video = $(this).siblings('video')[0]; // Assuming the video is a sibling
+        var video = $(this).siblings('video')[0]; // Get the video element
+        var carousel = $(this).closest('.carousel'); // Get the closest carousel ancestor
+        
         if (video.paused) {
             video.play();
-            $(this).fadeOut(); // Hide the play button smoothly
+            $(this).fadeOut(); // Hide the play button
+            carousel.carousel('pause'); // Pause the carousel
         }
     });
 
-    // Show the play button when the video is paused or ends
+    // Listen for the video being paused or ended
     $('video').on('pause ended', function() {
-        $(this).siblings('.video-play-button').fadeIn(); // Show the play button again
+        var playButton = $(this).siblings('.video-play-button');
+        var carousel = $(this).closest('.carousel'); // Get the closest carousel ancestor
+
+        playButton.fadeIn(); // Show the play button again
+        carousel.carousel('cycle'); // Resume the carousel
     });
 });
-
 
     </script>
 </body>
