@@ -1,55 +1,4 @@
 /********** Template CSS **********/
-
-
-
-/* Additional styling to ensure responsiveness and centering of the play button */
-
-.video-play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  cursor: pointer;
-  display: block;
-  width: 64px; /* Adjust if necessary */
-  height: 64px; /* Adjust if necessary */
-}
-
-/* Ensures the video container maintains aspect ratio and centers the video */
-.carousel-item video {
-  width: 100%;
-  height: auto;
-  position: relative;
-}
-
-/* Ensures that the video container itself is positioned relatively so that the absolute positioning of the play button is relative to it */
-.carousel-item {
-  position: relative;
-  overflow: hidden;
-}
-
-@media (max-width: 576px) {
-  /* Additional styles for smaller screens */
-  .video-play-button {
-      width: 48px; /* Smaller play button on smaller screens */
-      height: 48px;
-      position: absolute;
-      top: 10%;
-      left: 50%;
-      z-index: 10;
-      cursor: pointer;
-      display: block;
-  }
-  .carousel-item video {
-    width: 100%;
-    height: 450px;
-    position: relative;
-  }
-
-}
-
-
 .back-to-top {
   position: fixed;
   display: none;
@@ -423,12 +372,12 @@
   .testimonialCarousel {
     width: 100%;
   }
-  .testimonial-control-prev,
-  .testimonial-control-next {
-    position: absolute;
-    top: 10%;
-    z-index: 1000; /* Ensure they are above other content */
+  .testimonial-control-prev, .testimonial-control-next {
+  position: absolute;
+  top: 10%;
+  z-index: 1000; /* Ensure they are above other content */
   }
+
 }
 
 .testimonial-card {
@@ -436,6 +385,7 @@
   margin: 0 auto; /* Centering the card */
   max-width: 800px; /* Adjust max-width as needed */
   min-width: 300px;
+  
 }
 
 .testimonial-text {
@@ -479,8 +429,7 @@
 }
 
 /* Basic styling and positioning for arrows */
-.testimonial-control-prev,
-.testimonial-control-next {
+.testimonial-control-prev, .testimonial-control-next {
   position: absolute;
   top: 20%;
   transform: translateY(-50%);
@@ -500,11 +449,13 @@
 }
 
 /* Optional: Adjust arrow size, color, etc. */
-.testimonial-control-prev span,
-.testimonial-control-next span {
+.testimonial-control-prev span, .testimonial-control-next span {
   font-size: 24px; /* Adjust arrow size */
   color: #333; /* Adjust arrow color */
 }
+
+
+
 
 /* Custom CSS for Carousel Arrows on Small Screens */
 @media (max-width: 767px) {
@@ -559,12 +510,6 @@
   border-radius: 3.5rem;
 }
 
-.carousel-item video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 @media (max-width: 767.98px) {
   #header-carousel .carousel-item {
     position: relative;
@@ -578,6 +523,58 @@
     object-fit: cover;
   }
 }
+
+
+/* Additional styling to ensure responsiveness and centering of the play button */
+
+.video-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+  display: block;
+  width: 64px; /* Adjust if necessary */
+  height: 64px; /* Adjust if necessary */
+}
+
+/* Ensures the video container maintains aspect ratio and centers the video */
+.carousel-item video {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+/* Ensures that the video container itself is positioned relatively so that the absolute positioning of the play button is relative to it */
+.carousel-item {
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  /* Additional styles for smaller screens */
+  .video-play-button {
+      width: 48px; /* Smaller play button on smaller screens */
+      height: 48px;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      z-index: 10;
+      cursor: pointer;
+      display: block;
+  }
+  .carousel-item video {
+    width: 100%;
+    height: 450px;
+    position: relative;
+  }
+
+}
+
+
+
+
 
 .page-header {
   /*background: linear-gradient(rgba(3, 27, 78, 0.3), rgba(3, 27, 78, 0.3)),
@@ -737,6 +734,7 @@
 body {
   font-family: "Inter", sans-serif;
 }
+
 
 .modal-video .modal-dialog {
   position: relative;
