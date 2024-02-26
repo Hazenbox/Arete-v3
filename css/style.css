@@ -1,24 +1,54 @@
 /********** Template CSS **********/
 
-/* Ensures the video container is responsive and maintains aspect ratio */
-.carousel-item video {
-  width: 100%; /* Makes the video fill the container width */
-  height: auto; /* Maintains aspect ratio */
-}
+
 
 /* Additional styling to ensure responsiveness and centering of the play button */
-
 
 .video-play-button {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 48px;
-  color: #30B01D;
-  z-index: 2; /* Ensures the button is above the video */
-  cursor: pointer; /* Changes cursor to pointer on hover */
+  z-index: 10;
+  cursor: pointer;
+  display: block;
+  width: 64px; /* Adjust if necessary */
+  height: 64px; /* Adjust if necessary */
 }
+
+/* Ensures the video container maintains aspect ratio and centers the video */
+.carousel-item video {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+/* Ensures that the video container itself is positioned relatively so that the absolute positioning of the play button is relative to it */
+.carousel-item {
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  /* Additional styles for smaller screens */
+  .video-play-button {
+      width: 48px; /* Smaller play button on smaller screens */
+      height: 48px;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      z-index: 10;
+      cursor: pointer;
+      display: block;
+  }
+  .carousel-item video {
+    width: 100%;
+    height: 450px;
+    position: relative;
+  }
+
+}
+
 
 .back-to-top {
   position: fixed;
