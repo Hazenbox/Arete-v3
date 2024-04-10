@@ -196,3 +196,10 @@ input, select { vertical-align: middle; }
 	margin-top:84px;
 }
 }
+
+@media only screen and (max-width:399px) {
+
+    #fwslider .slide_content_wrap { display:none; }
+    #fwslider .timers { display:none; }
+    #fwslider .slide_content {cursor: pointer;}
+}
