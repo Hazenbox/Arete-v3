@@ -83,6 +83,7 @@ h1,
   font-family: "inter" !important;
   font-weight: 600;
   line-height: 1.2;
+  font-size:40px;
   color: #0c513f;
 }
 /***h1,
@@ -676,7 +677,7 @@ progress {
   .container-md,
   .container-sm,
   .container {
-    max-width: 1140px;
+    max-width: 1195px;
   }
 }
 @media (min-width: 1400px) {
@@ -6733,7 +6734,7 @@ fieldset:disabled .btn {
   margin-top: 1.5rem !important;
 }
 .mt-5 {
-  margin-top: 3rem !important;
+  margin-top:1rem !important;
 }
 .mt-auto {
   margin-top: auto !important;
@@ -6775,7 +6776,7 @@ fieldset:disabled .btn {
   margin-bottom: 1.5rem !important;
 }
 .mb-5 {
-  margin-bottom: 3rem !important;
+  margin-bottom:1.3rem !important;
 }
 .mb-auto {
   margin-bottom: auto !important;

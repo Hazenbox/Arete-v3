@@ -608,10 +608,21 @@
   margin: 0 auto;
   position: relative;
 }
+.page-header3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0e5b75;
+  background-color: #dde9ee;
+  border-radius:25px;
+  width:94%;
+  margin:10px auto;
+  position: relative;
+}
 
 @media (max-width: 768px) {
   .page-header2 {
-    margin-top: 25px !important;
+    margin-top:85px !important;
   }
 }
 
@@ -986,4 +997,11 @@ body {
 
 .copyright a:hover {
   color: var(--bs-primary);
+}
+
+h6{font-family:Arial, Helvetica, sans-serif;
+font-size:22px;
+color:#0ba98d;
+font-weight:bold;
+margin:0px;
 }
