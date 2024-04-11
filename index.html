@@ -153,7 +153,7 @@
                         <a href="service.html" class="nav-item nav-link">Services</a>
                         <a href="patient.html" class="nav-item nav-link">Patient forms</a>
                         <a href="faqs.html" class="nav-item nav-link">FAQs</a>
-                        <a href="#" class="nav-item nav-link">Fax:817-612-3600</a>
+                        <a href="tms.html" class="nav-item nav-link">TMS</a>
                     </div>
                     <div class="ms-auto d-none d-lg-flex">
                         <a class="btn btn-sm-square btn-secondary ms-2" href="tel:817.934.7065"><i class="fas fa-phone-alt"></i></a>                                               
@@ -175,7 +175,7 @@
 
 <div class="slide"> <img src="img/carousel-7.jpg"><div class="slide_content">
 <div class="slide_content_wrap"><div class="col-lg-7 text-start">
-<h1 class="text-white animated slideInRight mb-3" style="font-size: 2.7rem ">Arête Psychiatry </br></h1> 
+<h1 class="text-white animated slideInRight mb-3">Arête Psychiatry </br></h1> 
 <h5 class="text-white animated slideInRight mb-3"><i>Building bonds, Brain to SOUL...</i></h5>
 <h5 class="text-white animated slideInRight mb-3"><b>Medical Psychiatry, Behavioral health, Addiction Medicine, TMS, EMDR, Psychotherapy.
 <a href="https://intakeq.com/new/4sfupn" class="btn btn-primary py-3 px-5 animated slideInRight" style="width: 180px;">Book consultation</a>
@@ -185,7 +185,7 @@
 
 <div class="slide"><img src="img/carousel-8.jpg"><div class="slide_content">
 <div class="slide_content_wrap"><div class="col-lg-7 text-start">
-<h1 class="text-white animated slideInRight mb-3" style="font-size: 2.7rem ">Arête Psychiatry </br></h1> 
+<h1 class="text-white animated slideInRight mb-3">Arête Psychiatry </br></h1> 
 <h5 class="text-white animated slideInRight mb-3"><i>Building bonds, Brain to SOUL...</i></h5>
 <h5 class="text-white animated slideInRight mb-3"><b>Medical Psychiatry, Behavioral health, Addiction Medicine, TMS, EMDR, Psychotherapy.
 <a href="https://intakeq.com/new/4sfupn" class="btn btn-primary py-3 px-5 animated slideInRight" style="width: 180px;">Book consultation</a>
@@ -193,18 +193,14 @@
 
 <div class="slide"><img src="img/carousel-9.jpg"><div class="slide_content">
 <div class="slide_content_wrap"><div class="col-lg-7 text-start">
-<h1 class="text-white animated slideInRight mb-3" style="font-size: 2.7rem ">Arête Psychiatry </br></h1> 
+<h1 class="text-white animated slideInRight mb-3">Arête Psychiatry </br></h1> 
 <h5 class="text-white animated slideInRight mb-3"><i>Building bonds, Brain to SOUL...</i></h5>
 <h5 class="text-white animated slideInRight mb-3"><b>Medical Psychiatry, Behavioral health, Addiction Medicine, TMS, EMDR, Psychotherapy.
 <a href="https://intakeq.com/new/4sfupn" class="btn btn-primary py-3 px-5 animated slideInRight" style="width: 180px;">Book consultation</a>
 </div></div></div></div>
 
 <div class="slide">
-
-<video style="border-radius:25px;" width="100%" controls autoplay>
-        <source src="img/RamyaVideo.mp4" type="video/mp4" />
-    </video>
-
+<video style="border-radius:25px;" width="100%" controls><source src="img/RamyaVideo.mp4" type="video/mp4" /></video>
 </div>
 
 </div>
@@ -220,36 +216,96 @@
         <a href="https://intakeq.com/new/4sfupn" class="btn-floating-bottom">Book consultation</a>
     </div>
     
-    <!-- Services start -->
-
-    <div class="container-fluid container-service py-2">
+     <!-- Service Start -->
+    <div class="container-fluid container-service py-2" style="top:0px;">
         <div class="container py-5 ">
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" onClick= "" data-wow-delay="0.1s" data-bs-toggle="modal" data-bs-target="#anxietyModal">
                     <div class="service-item">
+                        <a href="#">
                         <img class="img-fluid w-100 mb-2" src="img/services/mental-health.png" alt="">
-                        <p class="mb-2 px-2 service-text">Exceptional psychiatry</p>
+                        <p class="mb-2 px-2 service-text">Exceptional psychiatry</p> </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+
+                <!-- Anxiety Modal -->
+                <div class="modal fade" id="anxietyModal" tabindex="-1" aria-labelledby="anxietyModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+                        <div class="modal-content custom-modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="derpressionModalLabel">Exceptional psychiatry</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Exceptional psychiatry
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" onClick= "" data-wow-delay="0.1s" data-bs-toggle="modal" data-bs-target="#depressionModal">
                     <div class="service-item">
+                            <a href="#">
                             <img class="img-fluid w-100 mb-2" src="img/services/CD.png" alt="">
-                            <p class="mb-2 px-2 service-text">Unmatched De-Addiction</p>
+                            <h6 class="mb-2 px-2 service-text">Unmatched De-Addiction</h6> </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                
+                <!-- Depression Modal -->
+                <div class="modal fade" id="depressionModal" tabindex="-1" aria-labelledby="depressionModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+                        <div class="modal-content custom-modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="derpressionModalLabel">Unmatched De-Addiction</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Unmatched De-Addiction</p>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" onClick= "" data-wow-delay="0.1s" data-bs-toggle="modal" data-bs-target="#nutritionModal">
                     <div class="service-item">
+                        <a href="#">
                         <img class="img-fluid w-100 mb-2" src="img/services/Property 1=Variant21.png" alt="">
-                        <p class="mb-2 px-2 service-text">Innovative, Non-Invasive Interventional procedures</p>
+                        <h6 class="mb-2 px-2 service-text">Innovative, Non-Invasive Interventional procedures</h6></a>
                     </div>
                 </div>
+                <!-- Nutrition Modal -->
+                <div class="modal fade" id="nutritionModal" tabindex="-1" aria-labelledby="nutritionModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+                        <div class="modal-content custom-modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="nutritionModalLabel">Innovative, Non-Invasive Interventional procedures</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Innovative, Non-Invasive Interventional procedures</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="d-flex justify-content-center mt-4">
                     <a href="service.html" class="btn-sec py-3 wow fadeInUp" style="border-radius:100px;width: 170px;">Check all services</a>
                 </div>
+       
+              
+        </div>
     </div>
+    <!-- Service End -->
 
-
-    <!-- Services end -->
+    
 
 
    
